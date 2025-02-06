@@ -13,7 +13,7 @@ public class Randp {
     }
 	
     public int nextInt() {
-        
-        return nums[(int)(Math.random() * numsLeft + 1)];
+        numsLeft--;
+        return nums[Math.random() * numsLeft];
     }
 }
